@@ -9,7 +9,10 @@ if (isset($_POST['action'])) {
         case 'fetchJournals':
             $journal = new Journal();
             $journal->fetchJournals();
-
+            break;
+        case 'fetchEbooksCategory':
+            $ebooks = new Ebook();
+            $ebooks->fetchEbookCategory();
             break;
         default:
             echo 'No action specified';

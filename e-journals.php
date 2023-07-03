@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home | 1 | Blueprint | Themekit</title>
+    <title>E-Journals</title>
     <meta name="description" content="">
     <script src="themekit/scripts/jquery.min.js"></script>
     <script src="themekit/scripts/main.js"></script>
@@ -38,10 +38,10 @@
         <div class="menu-cnt">
             <ul id="main-menu">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="#">About Library</a>
+                    <a href="about.html">About Library</a>
                 </li>
                 <li class="dropdown">
                     <a href="#">E-Resources</a>
