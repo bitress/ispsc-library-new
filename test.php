@@ -3,4 +3,4 @@
 include_once 'config/init.php';
 
 $ebook = new Ebook();
-$ebook->fetchEbookCategory();
+$ebook->fetchEbooksFromCategory();

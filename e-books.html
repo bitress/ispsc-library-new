@@ -66,25 +66,9 @@
 
                     </div>
                     <div class="cnt-album-box">
-                        <p class="album-title"><span>...</span> <a>Album list</a></p>
+                        <p class="album-title"><span>...</span> <a>Ebook list</a></p>
 
-                        <!--Start of Ebooks Content-->
-                        <div class="album-item">
-                            <div class="grid-list list-gallery" data-lightbox-anima="fade-top" data-columns="3" data-columns-md="2">
-                                <div class="grid-box">
-                                    <div class="grid-item">
-                                        <a class="img-box" href="media/wide.png">
-                                            <img src="media/wide.png" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="list-pagination">
-                                    <ul class="pagination" data-page-items="6" data-pagination-anima="fade-right"></ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End of Ebooks Content-->
-
+                        <div id="ebooks"></div>
 
                     </div>
 
@@ -166,6 +150,20 @@
 
                     $("#ebook_category").append($output);
                 }
+            })
+
+
+            $.ajax({
+                url: 'config/Ajax.php',
+                type: 'POST',
+                data: {
+                    action: 'fetchEbooks'
+                },
+                success: function(res) {
+
+                    $("#ebooks").html(res)
+                }
+
             })
 
         })

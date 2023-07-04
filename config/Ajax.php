@@ -14,6 +14,10 @@ if (isset($_POST['action'])) {
             $ebooks = new Ebook();
             $ebooks->fetchEbookCategory();
             break;
+        case 'fetchEbooks':
+            $ebooks = new Ebook();
+            $ebooks->fetchEbooksFromCategory();
+            break;
         default:
             echo 'No action specified';
     }
